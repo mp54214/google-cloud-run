@@ -1,0 +1,6 @@
+steps:
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/firstcloudrun-354014/google-cloud-run:8e118e1e266db369ae762dd09d7aca721abdd7b3']
+- name: gcr.io/cloud-builders/docker
+  args: ['push', 'gcr.io/firstcloudrun-354014/google-cloud-run:8e118e1e266db369ae762dd09d7aca721abdd7b3']
+  
